@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive - exercise</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="default-box header">
+            <img src="https://picsum.photos/40" alt="logo">
+            <ul>
+                <li>Home</li>
+                <li style="margin-left: 5px;">About</li>
+                <li style="margin-left: 5px;">Contact</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 style="text-align: center;">
+                Title
+            </h1>
+            <p style="text-align: center;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div style="display: flex; justify-content: space-between; margin-top: 50px;">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+            </div>
+        </div>
+        <div class="default-box footer">
+            <p>Copyright</p>
+            <p>My Website</p>
+            <p id="current_date"></p>
+        </div>
+        <script>
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("current_date").innerHTML = m + "/" + d + "/" + y;
+        </script>
+    </body>
+</html>
